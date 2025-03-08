@@ -1,3 +1,5 @@
+THIS IS 100% AI I HATE MAKING IMAGES
+
 # Pix2Text Docker Server
 
 This Docker image sets up a Pix2Text server that can recognize layouts, tables, math formulas (LaTeX), and text in images, converting them into Markdown format. It's a free alternative to Mathpix.

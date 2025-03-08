@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  pix2text:
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "8503:8503"
+    volumes:
+      # Mount a volume for persistent storage of models
+      - pix2text_data:/root/.pix2text
+      - cnstd_data:/root/.cnstd
+      - cnocr_data:/root/.cnocr
+    restart: unless-stopped
+
+volumes:
+  pix2text_data:
+  cnstd_data:
+  cnocr_data: 
